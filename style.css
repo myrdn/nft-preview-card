@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+html {
+  font-size: 18px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: hsl(217, 54%, 11%);
+  color: hsl(215, 51%, 70%);
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 335px;
+  background-color: hsl(216, 50%, 16%);
+  border-radius: 4%;
+}
+
+.card a {
+  color: hsl(0, 0%, 100%);
+}
+
+a:hover {
+  color: hsl(178, 100%, 50%);
+}
+
+.card__imgs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  position: relative;
+}
+
+.card__img {
+  width: 100%;
+  height: 100%;
+  padding: 1.5rem;
+  border-radius: 11%;
+}
+
+.card__overlay {
+  position: absolute;
+  width: 281px;
+  height: 281px;
+  border-radius: 4%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: rgb(0%, 100%, 97%, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card__overlay:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.card__link {
+  padding-left: 1.5rem;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.card__description {
+  padding-top: 0.8rem;
+  padding-left: 1.5rem;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+.card__infos {
+  padding: 0.8rem 1.5rem 1rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+}
+
+.card__price--cyan {
+  color: hsl(178, 100%, 50%);
+  display: flex;
+  align-items: center;
+}
+
+.card__price--cyan img {
+  padding-right: 0.4rem;
+}
+
+.card__time {
+  display: flex;
+  align-items: center;
+}
+
+.card__time img {
+  padding-right: 0.4rem;
+}
+
+.card__line {
+  margin: 0 1.5rem;
+  color: hsl(215, 32%, 27%);
+}
+
+.card__attribution {
+  display: flex;
+  align-items: center;
+  padding: 0.8rem 1.5rem 1.5rem 1.5rem;
+}
+
+.card__avatar {
+  border: 1px solid hsl(0, 0%, 100%);
+  border-radius: 50%;
+  height: 31px;
+  width: auto;
+}
+
+.card__author {
+  font-size: 0.9rem;
+  padding-left: 0.7rem;
+  font-weight: 300;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
